@@ -6,7 +6,7 @@ import { connect } from 'react-redux'
 import { getUser } from '../../actions/user'
 import * as ImagePicker from 'expo-image-picker';
 import { uploadPhoto, } from '../../actions/index'
-import { updateNextPhoto, removeImage } from '../../actions/post'
+import { updateNextPhoto, removeImage ,uploadPost } from '../../actions/post'
 import { FontAwesome } from '@expo/vector-icons'
 
 
@@ -59,7 +59,7 @@ class PostScreen extends React.Component {
     render(){
         return (
             <SafeAreaView style={  {flex:1,}}>
-            <Image source={require('../../assets/backgrounds/background-white.jpg')} style={{    justifyContent: 'center',     alignItems: 'center', position:'absolute', zIndex:-1, width:screenWidth, height:screenHeight,}} />
+            <Image source={require('../../assets/backgrounds/back2.jpg')} style={{    justifyContent: 'center',     alignItems: 'center', position:'absolute', zIndex:-1, width:screenWidth, height:screenHeight,}} />
                 <View style={(Platform.OS == 'ios') ?
                 {width:screenWidth, height:55}
                 : 

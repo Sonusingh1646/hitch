@@ -14,10 +14,10 @@ class PostCheckout extends React.Component {
     render(){
         return (
             <View style={{flex:1, backgroundColor:'white', alignItems:'center'}}>
-            <Image source={require('../../../assets/backgrounds/background-white.jpg')} style={{    justifyContent: 'center',     alignItems: 'center', position:'absolute', zIndex:-1, width:screenWidth, height:screenHeight+50,}} />
+            <Image source={require('../../../assets/backgrounds/back2.jpg')} style={{    justifyContent: 'center',     alignItems: 'center', position:'absolute', zIndex:-1, width:screenWidth, height:screenHeight+50,}} />
                 <TextInput 
                 placeholderTextColor={'black'}
-                placeholder={'Comment :)'}
+                placeholder={'Type in your description here :)'}
                 onChangeText={input=>this.props.updateDescription(input)}
                 value={this.props.post.description}
                 style={{backgroundColor:'rgba(0,0,0,0.05)', fontSize:20, paddingVertical:10, paddingHorizontal:15, margin:20, width:'95%', borderRadius:10}}

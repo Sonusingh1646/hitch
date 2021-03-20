@@ -13,7 +13,7 @@ class SearchScreen extends React.Component {
     render(){
         return (
             <View style={{flex:1, backgroundColor:'white', justifyContent:'center', alignItems:'center'}}>
-            <Image source={require('../../assets/backgrounds/background-white.jpg')} style={{    justifyContent: 'center',     alignItems: 'center', position:'absolute', zIndex:-1, width:screenWidth, height:screenHeight+50,}} />
+            <Image source={require('../../assets/backgrounds/back2.jpg')} style={{    justifyContent: 'center',     alignItems: 'center', position:'absolute', zIndex:-1, width:screenWidth, height:screenHeight+50,}} />
 
                 <Text style={{fontSize:35, fontFamily:'logo-font', marginVertical:60, color:'#0095f6'}}>SearchScreen</Text>
             </View>

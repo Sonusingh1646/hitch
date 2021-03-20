@@ -6,6 +6,7 @@ require('firebase/firestore')
   
     apiKey: "AIzaSyBQRS1QFQpDBKxXTAwELE2J7COI0-tlf6g",
     authDomain: "hitchhiker-e8e9b.firebaseapp.com",
+    databaseURL: "https://hitchhiker-e8e9b.firebaseio.com",
     projectId: "hitchhiker-e8e9b",
     storageBucket: "hitchhiker-e8e9b.appspot.com",
     messagingSenderId: "912099527940",

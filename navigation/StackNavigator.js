@@ -3,6 +3,10 @@ import { TouchableOpacity, Text } from 'react-native'
 import { createStackNavigator } from '@react-navigation/stack';
 import TabNavigator from './TabNavigator'
 import PostCheckout from '../screens/TabScreens/Upload/PostCheckout'
+import SavedPosts from '../screens/TabScreens/HeaderScreens/SavedPosts'
+import ProfileScreen from '../screens/TabScreens/ProfileScreen'
+import OnePost from '../screens/TabScreens/OnePost'
+import Edit from '../screens/TabScreens/Edit'
 
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
@@ -17,9 +21,12 @@ class MyStack extends React.Component{
         return (
             <Stack.Navigator>
                 <Stack.Screen name="TabNavigator" component={TabNavigator}  options={{headerShown: false,}}/>
-                <Stack.Screen name="PostCheckout" component={PostCheckout}  
-                options={{
-                    headerShown: true, headerTitle:'See your post', 
+                <Stack.Screen name="SavedPosts" component={SavedPosts}  />
+                <Stack.Screen name="OnePost" component={OnePost}  />
+                <Stack.Screen name="Edit" component={Edit}  />
+                <Stack.Screen name="ProfileScreen" component={ProfileScreen}  options={{headerStyle: {backgroundColor:'white'}}}/>
+                <Stack.Screen name="PostCheckout" component={PostCheckout} 
+                options={{headerShown: true, headerTitle:'See your post', 
                     headerRight: () => (
                         <TouchableOpacity style={{margin:20, flexDirection:'row'}}
                         onPress={()=>this.props.uploadPost()}
